@@ -20,12 +20,12 @@
 
     <style type="text/css">
         .valid{
-            background-color: lightgreen;
+            background-color: green;
             color: black;
         }
 
         .invalid{
-            background-color: lightcoral;
+            background-color: red;
             color: black;
         }
     </style>
@@ -34,7 +34,7 @@
 <body>
 
 <div class="container">
-    <h2>UK Postcode Validator and Formatter</h2>
+    <h2>UK Postcode Validator</h2>
     <form name="form" action="{% url 'check' %}" method="POST">{% csrf_token %}
         <div class="form-group">
             <label for="comment">Enter Postcode(s):</label>
@@ -43,7 +43,7 @@
                 For multiple postcodes validation, use semicolon ";" to separate them
             </small>
         </div>
-        <button type="submit" class="btn btn-primary">Format and Validate</button>
+        <button type="submit" class="btn btn-primary">Validate</button>
     </form>
 
 
