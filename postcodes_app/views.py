@@ -4,7 +4,7 @@ from ukpostcodes.postcode import Postcode
 
 
 def index(request):
-    """function to display the homepage application"""
+    """function to display the index page"""
     return render(request, 'validate_postcode.html')
 
 
