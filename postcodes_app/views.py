@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from ukpostcode.postcode import Postcode
+from ukpostcodes.postcode import Postcode
 
 
 def index(request):
