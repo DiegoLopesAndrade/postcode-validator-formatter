@@ -5,6 +5,7 @@ from .views import index, check
 
 
 class IndexTests(SimpleTestCase):
+    """Test to validade index function view"""
 
     def setUp(self):
         url = reverse('index')
@@ -24,6 +25,7 @@ class IndexTests(SimpleTestCase):
 
 
 class CheckTests(SimpleTestCase):
+    """Test to validade check function view"""
 
     def setUp(self):
         url = reverse('check')
